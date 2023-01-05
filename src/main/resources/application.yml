@@ -1,0 +1,26 @@
+server:
+  port: 8000
+ 
+
+spring:
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2-console
+  datasource:
+    username: sa
+    url: jdbc:h2:tcp://localhost/~/test
+    driverClassName: org.h2.Driver
+    password: ''
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+
+rest-api-key: a7f0ca46e27f183f57f20e56312a7493
+
+booksta:
+  bizMessages:
+    BOOKSTA_00 : ""
+    BOOKSTA_01 : "잘못된 비밀번호입니다."
